@@ -52,7 +52,14 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-luxury-gold" />
-                Cairo, Egypt
+                <a 
+                  href="https://maps.google.com/?q=ميدان+الجامعة+الروسية,+Badr,+Cairo+4951134"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-luxury-gold transition-colors"
+                >
+                  ميدان الجامعة الروسية، باdr، القاهرة
+                </a>
               </li>
             </ul>
           </motion.div>

@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { FleetSection } from "@/components/sections/FleetSection";
 import { AboutSection } from "@/components/sections/AboutSection";
+import { LocationSection } from "@/components/sections/LocationSection";
 import { AdminDashboard } from "@/components/admin/AdminDashboard";
 import { Footer } from "@/components/layout/Footer";
 import { LocaleFontWrapper } from "@/components/layout/LocaleFontWrapper";
@@ -20,6 +21,7 @@ export function HomePage() {
       <Hero onSearch={setHeroTypeFilter} />
       <FleetSection externalTypeFilter={heroTypeFilter} />
       <AboutSection />
+      <LocationSection />
       <AdminDashboard />
       <Footer />
     </main>
