@@ -102,19 +102,22 @@ export function CarCard({ car, index, onBook }: CarCardProps) {
         )}
 
         {/* Book Button */}
-        <motion.button
-          onClick={() => onBook(car)}
+        <motion.a
+          href={`/booking?carId=${car.id}`}
           disabled={!car.available}
-          className={`w-full rounded-xl py-3 font-semibold transition-all duration-300 ${
+          className={`w-full rounded-xl py-3 font-semibold transition-all duration-300 inline-flex items-center justify-center ${
             car.available
               ? "btn-gold"
               : "cursor-not-allowed bg-gray-500/20 text-gray-500"
           }`}
           whileHover={car.available ? { scale: 1.02 } : {}}
           whileTap={car.available ? { scale: 0.98 } : {}}
+          onClick={(e) => {
+            if (!car.available) e.preventDefault();
+          }}
         >
           {car.available ? t.fleet.bookNow : t.fleet.unavailable}
-        </motion.button>
+        </motion.a>
       </div>
 
       {/* Hover glow effect */}
