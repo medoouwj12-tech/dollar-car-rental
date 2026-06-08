@@ -103,12 +103,11 @@ export function CarCard({ car, index, onBook }: CarCardProps) {
 
         {/* Book Button */}
         <motion.a
-          href={`/booking?carId=${car.id}`}
-          disabled={!car.available}
+          href={car.available ? `/booking?carId=${car.id}` : "#"}
           className={`w-full rounded-xl py-3 font-semibold transition-all duration-300 inline-flex items-center justify-center ${
             car.available
               ? "btn-gold"
-              : "cursor-not-allowed bg-gray-500/20 text-gray-500"
+              : "cursor-not-allowed bg-gray-500/20 text-gray-500 pointer-events-none"
           }`}
           whileHover={car.available ? { scale: 1.02 } : {}}
           whileTap={car.available ? { scale: 0.98 } : {}}
