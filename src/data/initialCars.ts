@@ -206,4 +206,21 @@ export const initialCars: Car[] = [
     extraKmPrice: 10,
     deposit: 0,
   },
+  {
+    id: "13",
+    name: { en: "Hyundai Elantra Silver", ar: "هيونداي إلينترا فضي" },
+    brand: "Hyundai",
+    image: "/images/hyundai-elantra-cn7.jpg",
+    pricePerDay: 2000,
+    specs: {
+      fuel: "petrol",
+      transmission: "automatic",
+      seats: 5,
+      type: "sedan",
+    },
+    available: true,
+    kmLimit: 120,
+    extraKmPrice: 10,
+    deposit: 0,
+  },
 ];
