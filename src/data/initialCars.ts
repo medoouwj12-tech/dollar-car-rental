@@ -189,4 +189,21 @@ export const initialCars: Car[] = [
     extraKmPrice: 10,
     deposit: 0,
   },
+  {
+    id: "12",
+    name: { en: "Nissan Sunny 2026", ar: "نيسان صني 2026" },
+    brand: "Nissan",
+    image: "/images/nissan-sunny.jpg",
+    pricePerDay: 1700,
+    specs: {
+      fuel: "petrol",
+      transmission: "automatic",
+      seats: 5,
+      type: "sedan",
+    },
+    available: true,
+    kmLimit: 120,
+    extraKmPrice: 10,
+    deposit: 0,
+  },
 ];
